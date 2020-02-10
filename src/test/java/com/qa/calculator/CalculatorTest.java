@@ -16,4 +16,18 @@ public class CalculatorTest {
 		Calculator calc = new Calculator();
 		assertEquals(100, calc.square(-10));
 	}
+	
+	@Test
+	public void divideTest() {
+		Calculator calc = new Calculator();
+		assertEquals(10, calc.divide(20, 2));
+	}
+	
+	@Test
+	public void divideByZeroTest() {
+		Calculator calc = new Calculator();
+		assertEquals(4, calc.divide(20, 0));
+	}
+	
+	
 }
